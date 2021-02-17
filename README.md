@@ -52,7 +52,7 @@ git clone https://github.com/NikolayDenisov/nrf52840-dk-vscode.git
 ```
 
 
-### Step 7. Edit Makefile.posix
+### Step 7. Edit Makefile.posix and Makefile
 
 ```
 vim nRF5_SDK/components/toolchain/gcc/Makefile.posix
@@ -66,6 +66,15 @@ GNU_VERSION ?= 9.2.1 // Show your version step#2
 GNU_PREFIX ?= arm-none-eabi
 ```
 
+Open Makefile in nrf52840-dk-vscode/armgcc/Makefile and set your location
+
+```
+SDK_ROOT := /home/nick/projects/iot/nRF5_SDK_17_0_2/
+PROJ_DIR := /home/nick/projects/iot/nrf52840-dk-vscode/
+
+```
+
+
 ### Step 8. Open project in VSCODE
 
 Install extensions
@@ -73,6 +82,8 @@ Install extensions
 https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug
 
 https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+
+
 
 
 ### Step 9. Run -> Start Debugging

@@ -3,7 +3,7 @@ TARGETS          := nrf52840_xxaa
 OUTPUT_DIRECTORY := _build
 
 SDK_ROOT := /home/nick/projects/iot/nRF5_SDK_17_0_2/
-PROJ_DIR := /home/nick/projects/iot/nrf52840_vscode_clean/
+PROJ_DIR := /home/nick/projects/iot/nrf52840-dk-vscode/
 
 $(OUTPUT_DIRECTORY)/nrf52840_xxaa.out: \
   LINKER_SCRIPT  := blinky_gcc_nrf52.ld

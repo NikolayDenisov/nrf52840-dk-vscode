@@ -15,17 +15,6 @@
       "device": "nRF52840_xxAA",
       "interface": "swd",
       "preLaunchTask": "make",
-      "swoConfig": {
-        "source": "probe",
-        "enabled": true,
-        "swoFrequency": 2000000,
-        "decoders": [
-          {
-            "port": 0,
-            "label": "Output"
-          }
-        ]
-      },
       "svdFile": "${env:nrf5_sdk.path}/modules/nrfx/mdk/nrf52840.svd",
       "armToolchainPath": "/usr/bin/",
       "serverpath": "/usr/bin/JLinkGDBServer"
