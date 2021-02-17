@@ -1,12 +1,15 @@
 {
+  "env": {
+    "nrf5_sdk.path": "/home/nick/projects/iot/nRF5_SDK_17_0_2/"
+  },
   "configurations": [
     {
       "name": "nRF52840 DK",
       "includePath": [
         "${workspaceFolder}/**",
         "/usr/lib/arm-none-eabi/include",
-        "/home/nick/projects/iot/nRF5_SDK_17_0_2/modules/**",
-        "/home/nick/projects/iot/nRF5_SDK_17_0_2/components/**"
+        "${env:nrf5_sdk.path}/modules/**",
+        "${env:nrf5_sdk.path}/components/**"
       ],
       "forcedInclude": ["${workspaceFolder}/config/sdk_config.h"],
       "defines": [
@@ -28,7 +31,7 @@
       "browse": {
         "path": [
           "/usr/lib/arm-none-eabi/include",
-          "/home/nick/projects/iot/nRF5_SDK_17_0_2/**",
+          "${env:nrf5_sdk.path}/**",
           "${workspaceRoot}"
         ],
         "limitSymbolsToIncludedHeaders": true,
