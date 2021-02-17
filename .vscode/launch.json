@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [            
+      {
+        "name": "GDB nrf52840",
+        "cwd": "${workspaceRoot}",
+        "executable": "${workspaceFolder}/armgcc/_build/nrf52840_xxaa.out",
+        "request": "launch",
+        "type": "cortex-debug",
+        "servertype": "jlink",
+        // "svdFile": "/home/nick/projects/iot/nRF5_SDK_17_0_2/modules/nrfx/mdk/nrf52840.svd",
+        "runToMain": true,
+        "device": "nRF52840_xxAA",
+        "interface": "swd",
+        "preLaunchTask": "make",
+        "swoConfig": {
+            "source": "probe",
+            "enabled": true,
+            "swoFrequency": 2000000,
+            "decoders": [
+                {
+                    "port": 0,
+                    "label": "Output",
+                }
+            ]
+        }
+      }
+    ]
+  }

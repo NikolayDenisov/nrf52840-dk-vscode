@@ -1,0 +1,40 @@
+{
+  "configurations": [
+    {
+      "name": "nRF52840 DK",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "/usr/lib/arm-none-eabi/include",
+        "/home/nick/projects/iot/nRF5_SDK_17_0_2/modules/**",
+        "/home/nick/projects/iot/nRF5_SDK_17_0_2/components/**"
+      ],
+      "forcedInclude": ["${workspaceFolder}/config/sdk_config.h"],
+      "defines": [
+        "BOARD_PCA10056",
+        "CONFIG_GPIO_AS_PINRESET",
+        "INITIALIZE_USER_SECTIONS",
+        "FLOAT_ABI_HARD",
+        "NRF52",
+        "NRF52840_XXAA",
+        "NRF_SD_BLE_API_VERSION=6",
+        "S140",
+        "SOFTDEVICE_PRESENT",
+        "SWI_DISABLE0"
+      ],
+      "compilerPath": "/usr/bin/arm-none-eabi-gcc",
+      "cStandard": "c11",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "clang-x64",
+      "browse": {
+        "path": [
+          "/usr/lib/arm-none-eabi/include",
+          "/home/nick/projects/iot/nRF5_SDK_17_0_2/**",
+          "${workspaceRoot}"
+        ],
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+      }
+    }
+  ],
+  "version": 4
+}
